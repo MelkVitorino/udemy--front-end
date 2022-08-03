@@ -1,11 +1,193 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Define que o tipo de html é o 5-->
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8"> <!-- Usa para que os acentos nas palavras apareção-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Meu site</title>
+	<title>Meu site</title> <!-- Titulo do site -->
 </head>
 <body>
-	meu primeiro site
+	<h1>Bases do HTML5</h1>
+
+	<h2>Titulos</h2>
+	<!-- TITULOS - O titulo vai de h1 a h6, como uima hierarquia de titulos. Não é sombre tamanho, e sim hierarquia-->
+	<h1>Titulo 1</h1>
+	<h2>Titulo 2</h2>
+	<h3>Titulo 3</h3>
+	<h4>Titulo 4</h3>
+	<h5>Titulo 5</h5>
+	<h6>Titulo 6</h6>
+
+	<!-- PARÁGRAFOS -->
+	<h2>Parágrafos</h2>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac accumsan tortor, ut accumsan sem. Fusce lectus enim, tristique ut tincidunt ac, pulvinar non erat.</p>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac accumsan tortor, ut accumsan sem. Fusce lectus enim, tristique ut tincidunt ac, pulvinar non erat.</p>
+
+	<hr> <!-- cria um linha horizontal que pega a tela toda -->
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac accumsan tortor, ut accumsan sem. Fusce lectus enim, tristique ut tincidunt ac, pulvinar non erat.</p>
+
+	<!-- FORMATAÇAÕ DE TEXTO -->
+
+	<h2>Formatação de texto</h2>
+
+	Esse é um texto em <strong>negrito</strong>
+	<br> <!-- br quebra a linha -->
+	Esse é um texto em <em>italico</em>
+	<br>
+	Esse é um texto em <u>underline</u>
+	<br>
+	Esse é um texto em <strike>errado</strike>
+	<br>
+
+	<!-- LISTA ORDENADA E NÃO ORDENADA(usa-se bastante na formação de menu de navegação -->
+
+	<h2>Lista não ordenada</h2>
+	<h2>Lista de compra</h2>
+	<!-- ul = lista não ordenada, ol = lista ordenada -->
+	<ul type="disc"> <!-- O type define o tipo de marcador que vai ser usado... por padrão vem em bolinha preta.TIPOS: circle (circulo), square(quadrado), disc(bolinha preta), -->
+		<li>notebook</li>
+		<li>roteador</li>
+	</ul>
+
+	<h2>Lista ordenada</h2>
+	<h2>Perguntas</h2>
+	<ol type="I"> <!-- O type define o tipo de marcador que vai ser usado... por padrão vem em números.TIPOS: 1 (numeros, valor padrão), A e a(o alfabeto de A até Z , o alfabeto de a até z minusculo), I e i(o I com lestra maiuscula e o i minisculo,represente algarismo romano), -->
+		<li>Comida favorita?</li>
+		<li>Carro favorito?</li>
+		<li>Série favorita?</li>
+	</ol>
+
+	<!-- IMAGENS -->
+
+	<!-- são duas formas de carregar imagens: colocando ela dentro do seu projeto, ou usando a URL da onde ela esta sendo hospedada (mas não é muito bom a segunda opção)-->
+
+	<!-- width = largura, heigth = altura -->
+	<h2>Imagens</h2>
+
+	<img src="imagens/ferrari.jpg" width="300" height="300">
+	<br> 
+
+
+	<!-- ÂNCORA E REFERÊNCIA-->
+
+	<h2>Links no HTML5</h2>
+	<!-- entra na página inicial--> 
+	<a href="index.html"> Página principal</a>
+	<br>
+
+	<!-- abrindo um site extern -->
+	<a href="https://www.lipsum.com/feed/html"> Página do Lorem Ipsom</a>
+
+	<br><br>
+
+	<!-- TABELAS -->
+
+	<!-- base para criar tabelas-->
+	<h2>Tabela</h2>
+
+	<h3>Produtos</h3>
+
+	<table border="2" width="100%"> <!-- border = define a borda da tabela/ o width o tamanho, usando numeros ou porcentagem-->
+		<tr><!-- table row = linha da tabela -->
+			<th>Código</th> <!-- table header = cabeçalho/titulo da tabela-->
+			<th>Produto</th>
+			<th>Preço</th>
+		</tr> 
+
+		<tr>
+			<td>001</td><!-- table dada = aonde são colocados os dados da tabela -->
+			<td><a href="https://www.magazineluiza.com.br/notebook-acer-aspire-5-intel-core-i5-8gb-256gb-ssd-156-full-hd-windows-11-home/p/234898600/in/nota/?&seller_id=magazineluiza&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=67171&gclid=Cj0KCQjwuaiXBhCCARIsAKZLt3nURBzfP5MA7aQW0d2KsF__7MHFI4hKwVIDXstFg-jAuIk7jKIuQQMaAh-gEALw_wcB&gclsrc=aw.ds">Notebook</a></td> <!-- links dentro da tabela -->
+			<td>R$ 2.500,00</td>
+		</tr>
+
+		<tr>
+			<td>002</td>
+			<td><img src="imagens/ferrari.jpg" width="50" height="50"></td> <!-- colando imagem na tabela-->
+			<td>R$ 999,00</td>
+		</tr>
+
+		<tr>
+			<td rowspan="2">Desconto</td> <!-- mesclando as linhas com "ROWPAN = extensao da linha" -->
+			<td colspan="2">Cumpo1 = R$-10</td> <!-- mesclando as colunas com "COLSPAN = extensao da coluna" -->
+		</tr>
+
+		<tr>
+			<td colspan="2">Cumpo2 = R$-12</td> <!-- mesclando as colunas com "COLSPAN = extensao da coluna" -->
+		</tr>
+
+		<tr>
+			<td>Total</td>
+			<td colspan="2">R$ 3848,58</td>
+		</tr>
+	</table>
+
+	<!-- FORMULÁRIOS -->
+	<h2>Formulários</h2>
+
+	<h3>Login</h3>
+
+	<form action="processa.php"> <!-- tag base do formulário--> 
+		Login:<br>
+		<input type="text" name="login"> <!--INPUT = entrada/ TYPE = define o tipo do input. ex: text(texto)/ NAME = usa com uma linguagem que guarda dados-->
+
+		<br>
+		Senha:<br>
+		<input type="password" name="login"> <!--TYPE = define o tipo do input. ex: password(senha)-->
+
+		<br>
+		<input type="button" value="Logar"> <!--TYPE = submit que é enviar / VALUE = define o texto para o botão -->
+	</form>
+
+	<h3>Cadastro</h3>
+
+	<form>
+		Login:<br>
+		<input type="text" name="login">
+		<br>
+		<br>
+		Sexo:<br>
+		<input type="radio" name="sexo" value="m">Masculino<br> <!-- TYPE = radio - usando para criar escolhas-->
+		<input type="radio" name="sexo" value="f">Feminino<br>
+
+		<!--NAME = use sempre o mesmo nos dois, para que haja apenas uma escolha, e não duas ou mais-->
+
+		<br>
+		<!-- VALUE= define os valor o qual foi escolhido, para ser enviado para outra página-->
+
+		Interesses:<br>
+		<input type="checkbox" name="interesses"> Futebol<br> <!-- usado para marcar opções-->
+		<input type="checkbox" name="interesses"> Cursos<br>
+		<input type="checkbox" name="interesses"> Moda<br>
+		<br>
+
+		Estados:<br>
+		<select name="estado"><!-- usa para criar uma seleção de itens-->
+			<option value="sp">SP</option> <!-- cria as opções para serem escolhidas -->
+			<option value="mg">MG</option>
+			<option value="rj">RJ</option>
+			<option value="ms">MS</option>
+		</select>
+
+		<br>
+		<br>
+
+		Observações:<br>
+		<textarea></textarea><br><!-- cria uma area para digitar texto-->
+		<input type="submit" name="" value="cadastrar">
+
+	</form>
+	<br>
+	<br>
+
+	<h2>Caracteres Especiais</h2>
+	<a href="https://www.w3schools.com/html/html_entities.asp">página de codigos de caracteres especiais</a>
+	<br>
+	<br>
+
+    &lt;p&gt; Mostra a tag <br> <!-- mostra a tag-->
+
+    HOME &nbsp;&nbsp;&nbsp;		- CONTATO &nbsp;&nbsp;	;- SOBRE NÓS (usado para criar espaço) <!-- cria espaços entre as palavras-->
 </body>
 </html>
