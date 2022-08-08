@@ -1,0 +1,38 @@
+body{
+	background: #d2d2c1 url('imagens/fundo.png'); /* coloque sempre uma cor, depois a imagem. se por um evento nao carregar a imagem, a cor vai ficar de fundo*/
+	font: 16px Arial, Helvetica, sans-serif;/*defina um tamanho de fonte padrão, também defina a fonte que será usado*/
+}
+
+#principal{
+	width: 900px;/*largura padrão do site, container*/
+}
+
+#menu{
+	background: #c5c5b2;
+	padding: 18px ;/*aplica um espaçamento inteiro*/
+}
+
+a{
+	color: #4b566a;
+	text-decoration: none;
+	font-weight: bolder;
+	padding: 5px;
+}
+
+#conteudo{
+	background: #e8e8d9;
+	padding: 10px;
+}
+
+#rodape{
+	text-align: center;
+}
+
+h1{
+	color: #828271;
+	font-size: 1.2em;
+}
+
+.img-campanha{
+	border: 10px solid #c3c3ae;
+}

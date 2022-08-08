@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Elementos Flutuantes</title>
+	<style type="text/css">
+		
+		.conteudo{
+			background-color: blue;
+			border: 1px solid gray;
+			width: 150px;
+			height: 150px;
+			margin: 10px;
+			float: left;
+		}
+
+		/*
+		.conteudo1{
+			background-color: red;
+			border: 1px solid gray;
+			width: 150px;
+			height: 150px;
+			float: right; faz os conteudos flutuar, a direita ou a esquera, conforme estiver nos valores
+			}*/
+		
+
+		.clear{
+			clear: left;/*quando usar o CLEAR, use na mesma posição que usou o floar, ex: rigth rigth, left left*/
+		}
+
+		#principal{
+			border: 5px solid red;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="principal">
+
+		<div class="conteudo">
+			conteúdo 1
+		</div>
+
+		<div class="conteudo">
+			conteúdo 2
+		</div>
+
+		<div class="conteudo">
+			conteúdo 3
+		</div>
+
+		<div class="conteudo">
+			conteúdo 4
+		</div>
+
+		<div class="clear"></div><!-- use qualquer elemento com a CLASS clear para limpar a flutuação e mostra o backgroud*/
+
+	</div>
+
+	
+</body>
+</html>
