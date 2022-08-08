@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sobrepondo elementos</title>
+	<style type="text/css">
+		
+		.conteudo1{
+			border: 1px solid red;
+			background-color: orange;
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			z-index: 2; /*ele muda as posições dos elementos, define qual elemento aparece primeiro..QUANTO MAIOR O NUMERO, MAIS A FRENTE ELE APARECE*/
+		}
+
+		.conteudo2{
+			border: 1px solid red;
+			background-color: green;
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			top: 80px;
+			left: 80px;
+			z-index: 0;
+		}
+		.conteudo3{
+			border: 1px solid red;
+			background-color: blue;
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			top: 160px;
+			left: 160px;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="conteudo1">
+		conteudo1
+	</div>
+
+	<div class="conteudo2">
+		conteudo2
+	</div>
+
+	<div class="conteudo3">
+		conteudo3
+	</div>
+</body>
+</html>
