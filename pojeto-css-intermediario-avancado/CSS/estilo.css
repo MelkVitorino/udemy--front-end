@@ -1,0 +1,84 @@
+
+
+
+
+/* seletor universal 
+*{
+	
+}
+
+seletor de textos
+h1{
+	
+}
+
+seletor de classe 
+.verde{
+	
+}
+
+p.verde{
+	
+}
+
+seletor de ID 
+#cabecalho{
+
+}
+
+seletor filho ">" 
+li > a{
+	
+}
+
+seletor descendente
+p a{
+	
+}
+
+seletor irmão adjacente (seleciona o primeiro elemento que for achada após a tag inicial) 
+h1 + p{
+
+}
+
+seletor irmão geral 
+h1 ~ p{
+
+
+}
+*/
+
+/*Herança e Especificidade*/
+body{
+	henrança
+}
+
+
+/* No caso de seletores iguais,  quem vai ditar as configurações é o ultimo. mas usando o !IMPORTANT,  muda, deixando 
+que estiver com o tal, como pioriade */
+p{
+	color: !important; 
+}
+
+p{
+
+}
+
+/* seletores especificos, sempre terão mais importância do que seletores gerias, exemplo abaixo */
+*{
+	color: red;
+}
+
+h2{
+	color: blue;
+}
+
+/*o ID é mais especifico que a CLASS... se os dois estão na mesma tag, sempre o ID será o primeiro a ser colocado*/
+
+h1.verde{
+
+}
+
+h1#amarelo{
+	
+}
